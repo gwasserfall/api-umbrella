@@ -8,4 +8,12 @@ source ./tasks/helpers/lua.sh
 
 luarocks_install "argparse" "$lua_argparse_version"
 
+# Hijacking this to install other deps
+luarocks_install "lua-resty-session"
+luarocks_install "lua-resty-jwt"
+luarocks_install "lua-resty-http"
+luarocks_install "lua-resty-openidc"
+luarocks_install "luacrypto"
+
+
 stamp
